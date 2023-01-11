@@ -35,6 +35,23 @@ async def start(Client, message):
             start_message, 
             reply_markup=start_button
         )
+    
+@bot.on_callbackquery()
+async def callbacks(Client, CallbackQuery):
+    if CallbackQuery.data == 'start'
+    
+    start_button = InlineKeyboardMarkup(
+    [
+        [InlineKeyboardButton('➕ Adicione-me a um grupo ➕', url='https://t.me/MrMarketingBot?startgroup=start')],
+        [InlineKeyboardButton('📢 Adicione-me a um canal 📢', url='https://t.me/MrMarketingBot?startchannel=start')],
+    ],
+) 
+    
+    await.message.reply(
+            start_message,
+            reply_markup=start_button
+        )
+    
 
 
 botstart_message = """
