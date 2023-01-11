@@ -39,7 +39,7 @@ async def start(Client, message):
     
 @bot.on_callbackquery()
 async def callbacks(Client, CallbackQuery):
-    if CallbackQuery.data == 'start'
+    if CallbackQuery.data == 'start':
     
     start_button = InlineKeyboardMarkup(
     [
