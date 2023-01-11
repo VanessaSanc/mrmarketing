@@ -28,6 +28,7 @@ async def start(Client, message):
     [
         [InlineKeyboardButton('➕ Adicione-me a um grupo ➕', url='https://t.me/MrMarketingBot?startgroup=start')],
         [InlineKeyboardButton('📢 Adicione-me a um canal 📢', url='https://t.me/MrMarketingBot?startchannel=start')],
+        [InlineKeyboardButton('Informações', callback_data='start')],
     ],
 ) 
 
@@ -44,6 +45,7 @@ async def callbacks(Client, CallbackQuery):
     [
         [InlineKeyboardButton('➕ Adicione-me a um grupo ➕', url='https://t.me/MrMarketingBot?startgroup=start')],
         [InlineKeyboardButton('📢 Adicione-me a um canal 📢', url='https://t.me/MrMarketingBot?startchannel=start')],
+        [InlineKeyboardButton('Informações', callback_data='start')],
     ],
 ) 
     
